@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMinhasAtividades"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        fab:menu_fab_size="normal"
+        fab:menu_icon="@drawable/fab_add">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/btNovaAtividade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gamepad"
+            fab:fab_size="mini"
+            fab:fab_label="Nova Atividade"
+            android:onClick="novaAtividade"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>
